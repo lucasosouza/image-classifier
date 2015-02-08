@@ -39,3 +39,4 @@ after_save  :classify
   end
 
 end
+

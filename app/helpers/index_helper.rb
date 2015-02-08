@@ -2,7 +2,7 @@
 helpers do
 
   def get_labels_from_watson_custom(photos)
-    limit = 10 #temp
+    limit = 30 #temp
     counter = 0 #temp
     photos.each do |image|
       Image.create(file_name: image, address: File.dirname(image)).labels
