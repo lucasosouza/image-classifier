@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row" >
+    <div class="page-header">
+      <h1>Got it! <small>Here are your classified photos</small></h1>
+    </div>
+  </div>
+<% @categories.each do |category| %>
+  <div class="row">
+  <div class="page-header">
+    <h2><small><%= category %></small></h2>
+  </div>
+      <% images_by(category).each do |image|%>
+       <img src="<%= image.file_name %>" class="img-thumbnail" style="width: auto; height: 140px;"></img>
+      <% end %>
+  </div>
+<% end %>
+
+</div>
